@@ -15,11 +15,17 @@
 # TOTAL: 23
 payload:
   - DOMAIN-SUFFIX,vps.hosting
+#   Oregon
   - IP-CIDR,34.82.18.0/22
-  - IP-CIDR,34.127.94.0/22
+#   
+  - IP-CIDR,34.142.170.0/22
+#   sub
   - IP-CIDR,34.125.205.0/22
+#   hk
   - IP-CIDR,35.241.83.0/22
+#   v.ps
   - IP-CIDR,45.130.21.0/22
+#   arm
   - IP-CIDR,146.56.148.0/22
 #   - IP-CIDR,34.142.170.0/22
 #   - IP-CIDR,34.142.170.0/22
