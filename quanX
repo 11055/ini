@@ -1,0 +1,69 @@
+[custom]
+
+;去广告：支持
+;自动测速：支持
+;微软分流：支持
+;苹果分流：支持
+;增强中国IP段：支持
+;增强国外GFW：支持
+
+;设置规则标志位
+
+
+ruleset=💋 YouTube,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/YouTube/YouTube.list
+ruleset=💋 Netflix,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Netflix/Netflix.list
+ruleset=💋 Disney+,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Disney/Disney.list
+ruleset=💋 Paramount+,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/ParamountPlus/ParamountPlus.list
+ruleset=💋 Bilibili,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/BiliBili/BiliBili.list
+ruleset=💋 Spotify,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Spotify/Spotify.list
+ruleset=💋 TikTok,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/TikTok/TikTok.list
+ruleset=🎉 Telegram,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Telegram/Telegram.list
+ruleset=💋 Twitch,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Twitch/Twitch.list
+ruleset=🎯 VPS,clash-classic:https://raw.githubusercontent.com/11055/ini/main/vps.yaml
+ruleset=💰 PayPal,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/PayPal/PayPal.list
+
+ruleset=📢 谷歌,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Google/Google.list
+ruleset=🍎 苹果服务,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list
+
+ruleset=🎯 PROXY,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Proxy/Proxy.list
+ruleset=🎯 国内流量,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/ChinaMax/ChinaMax.list
+ruleset=🎯 国内流量,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/ChinaMax/ChinaMax_No_IPv6.list
+ruleset=🎯 国内流量,[]GEOIP,CN
+ruleset=🐟 漏网之鱼,[]FINAL
+;设置规则标志位
+
+;设置分组标志位
+custom_proxy_group=🎯 PROXY`select`[]🎯 USA`[]🎯 Hong Kong`[]🎯 Singapore`[]🎯 Japan`[]🎯 DIY`[]🎯 Others`[]DIRECT
+custom_proxy_group=🎯 Others`select`GCX`^((?!美国|US|USA|United States|港|Hong Kong|HK|新加坡|狮城|Japan|日本|Singapore|SG|SINGAPORE|.*\d+\.\d+\.\d+\.\d+).)*$
+custom_proxy_group=🎯 DIY`select`(.*\d+\.\d+\.\d+\.\d+)
+custom_proxy_group=🎯 VPS`select`[]🎯 DIY`[]🎯 PROXY`[]🎯 USA`[]🎯 Hong Kong`[]🎯 Singapore`[]🎯 Japan`[]🎯 Others`[]DIRECT
+
+custom_proxy_group=💋 Paramount+`select`[]🎯 USA`[]🎯 PROXY`[]🎯 Hong Kong`[]🎯 Singapore`[]🎯 Japan`[]🎯 DIY`[]🎯 Others`[]DIRECT
+custom_proxy_group=💋 YouTube`select`[]🎯 PROXY`[]🎯 USA`[]🎯 Hong Kong`[]🎯 Singapore`[]🎯 Japan`[]🎯 DIY`[]🎯 Others`[]DIRECT
+custom_proxy_group=💋 Netflix`select`[]🎯 PROXY`[]🎯 USA`[]🎯 Hong Kong`[]🎯 Singapore`[]🎯 Japan`[]🎯 DIY`[]🎯 Others`[]DIRECT
+custom_proxy_group=💋 Disney+`select`[]🎯 PROXY`[]🎯 USA`[]🎯 Hong Kong`[]🎯 Singapore`[]🎯 Japan`[]🎯 DIY`[]🎯 Others`[]DIRECT
+custom_proxy_group=💋 Twitch`select`[]🎯 PROXY`[]🎯 USA`[]🎯 Hong Kong`[]🎯 Singapore`[]🎯 Japan`[]🎯 DIY`[]🎯 Others`[]DIRECT
+custom_proxy_group=💋 Spotify`select`[]🎯 PROXY`[]🎯 USA`[]🎯 Hong Kong`[]🎯 Singapore`[]🎯 Japan`[]🎯 DIY`[]🎯 Others`[]DIRECT
+
+custom_proxy_group=🎯 USA`select`(美国|US|USA|United States)
+custom_proxy_group=🎯 Hong Kong`select`(港|HK|Hong Kong)
+custom_proxy_group=🎯 Singapore`select`(新加坡|狮城|SG|SINGAPORE|Singapore)
+custom_proxy_group=🎯 Japan`select`(Japan|日本)
+
+custom_proxy_group=💰 PayPal`select`[]🎯 PROXY`[]🎯 USA`[]🎯 Hong Kong`[]🎯 Singapore`[]🎯 Japan`[]🎯 DIY`[]🎯 Others`[]DIRECT
+custom_proxy_group=🎉 Telegram`select`[]🎯 PROXY`[]🎯 USA`[]🎯 Hong Kong`[]🎯 Singapore`[]🎯 Japan`[]🎯 DIY`[]🎯 Others`[]DIRECT
+custom_proxy_group=💋 Bilibili`select`[]DIRECT`[]🎯 PROXY`[]🎯 USA`[]🎯 Hong Kong`[]🎯 Singapore`[]🎯 Japan`[]🎯 DIY`[]🎯 Others
+custom_proxy_group=💋 TikTok`select`[]🎯 PROXY`[]🎯 USA`[]🎯 Hong Kong`[]🎯 Singapore`[]🎯 Japan`[]🎯 DIY`[]🎯 Others`[]DIRECT
+custom_proxy_group=📢 谷歌`select`[]🎯 PROXY`[]🎯 USA`[]🎯 Hong Kong`[]🎯 Singapore`[]🎯 Japan`[]🎯 DIY`[]🎯 Others`[]DIRECT
+custom_proxy_group=🍎 苹果服务`select`[]🎯 PROXY`[]🎯 USA`[]🎯 Hong Kong`[]🎯 Singapore`[]🎯 Japan`[]🎯 DIY`[]🎯 Others`[]DIRECT
+custom_proxy_group=🕹️ 游戏平台`select`[]🎯 PROXY`[]🎯 USA`[]🎯 Hong Kong`[]🎯 Singapore`[]🎯 Japan`[]🎯 DIY`[]🎯 Others`[]DIRECT
+custom_proxy_group=💋 国外媒体`select`[]🎯 PROXY`[]🎯 USA`[]🎯 Hong Kong`[]🎯 Singapore`[]🎯 Japan`[]🎯 DIY`[]🎯 Others`[]DIRECT
+custom_proxy_group=💋 国内媒体`select`[]DIRECT`[]🎯 PROXY`[]🎯 USA`[]🎯 Hong Kong`[]🎯 Singapore`[]🎯 Japan`[]🎯 DIY`[]🎯 Others
+custom_proxy_group=🎯 国内流量`select`[]DIRECT`[]🎯 PROXY`[]🎯 USA`[]🎯 Hong Kong`[]🎯 Singapore`[]🎯 Japan`[]🎯 DIY`[]🎯 Others
+custom_proxy_group=🐟 漏网之鱼`select`[]🎯 PROXY`[]🎯 USA`[]🎯 Hong Kong`[]🎯 Singapore`[]🎯 Japan`[]🎯 DIY`[]🎯 Others`[]DIRECT
+;设置分组标志位
+
+enable_rule_generator=true
+overwrite_original_rules=true
+
+;clash_rule_base=https://raw.githubusercontent.com/cutethotw/ClashRule/main/GeneralClashConfig.yml
