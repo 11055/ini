@@ -34,3 +34,7 @@ payload:
 #  Yao
   - IP-CIDR,109.105.193.0/22
 #   - IP-CIDR,34.142.170.0/22
+  - DOMAIN-SUFFIX,adobe.io,REJECT
+  - DOMAIN-SUFFIX,*.adobe.io,REJECT
+  - DOMAIN-SUFFIX,adobestats.io,REJECT
+  - DOMAIN-SUFFIX,photo-api.adobe.io,DIRECT
